@@ -76,3 +76,9 @@ Raw Data → Staging → Cleaning → Validation → Analysis-Ready Data
 ```
 
 It demonstrates that raw source data is preserved while transformations are performed in a controlled staging layer.
+
+## Quality checks and data dictionary
+
+After `Main.sql`, execute [`sql/quality_checks.sql`](sql/quality_checks.sql) in MySQL 8.0+. These queries report row counts, potential duplicate groups, missing values, and invalid ranges. They are **diagnostic queries**, not automated pass/fail assertions.
+
+See the [data dictionary](docs/DATA_DICTIONARY.md) for field definitions, the cleaning assumptions, and limitations.
