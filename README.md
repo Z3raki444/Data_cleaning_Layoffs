@@ -12,7 +12,7 @@ A MySQL 8.0+ data-cleaning project that transforms a raw layoffs dataset into an
 | Output example | [`layoffs_cleaned.csv`](layoffs_cleaned.csv) and the final MySQL staging table |
 | Data definitions | [`docs/DATA_DICTIONARY.md`](docs/DATA_DICTIONARY.md) |
 
-**Demonstrated SQL skills:** window functions, CTE-style analytic reasoning, joins, update statements, date conversion, and data quality review. This is a batch cleaning exercise, not a scheduled production pipeline.
+**Demonstrated SQL skills:** window functions, self joins, update statements, date conversion, NULL handling, and data quality review. This is a batch cleaning exercise, not a scheduled production pipeline.
 
 ## Project Goals
 
