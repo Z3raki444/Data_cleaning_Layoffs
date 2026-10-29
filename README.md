@@ -2,6 +2,18 @@
 
 A MySQL 8.0+ data-cleaning project that transforms a raw layoffs dataset into an analysis-ready table using a reproducible SQL workflow.
 
+## Quick project tour
+
+| Step | What to inspect |
+| --- | --- |
+| Raw input | [`layoffs.csv`](layoffs.csv), preserved separately from transformations |
+| Core workflow | [`Main.sql`](Main.sql): staging, deduplication, standardization, null handling |
+| Quality review | [`sql/quality_checks.sql`](sql/quality_checks.sql): diagnostic checks for duplicates and missing values |
+| Output example | [`layoffs_cleaned.csv`](layoffs_cleaned.csv) and the final MySQL staging table |
+| Data definitions | [`docs/DATA_DICTIONARY.md`](docs/DATA_DICTIONARY.md) |
+
+**Demonstrated SQL skills:** window functions, CTE-style analytic reasoning, joins, update statements, date conversion, and data quality review. This is a batch cleaning exercise, not a scheduled production pipeline.
+
 ## Project Goals
 
 This project demonstrates practical SQL data-cleaning techniques commonly used in analytics and data-engineering workflows:
